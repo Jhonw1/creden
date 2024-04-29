@@ -1,0 +1,133 @@
+.social-sidebar-container {
+    position: fixed;
+    top: 36%;
+    left: 0;
+    width: 60px;
+    height: 200px;
+background-color:  #00449c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px 5px 5px 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(3100%);
+}
+  
+  .social-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+  }
+  
+  .social-icon {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff; /* Color blanco */
+    font-size: 20px;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+@media screen and (max-width: 1366px){
+
+  .social-sidebar-container {
+
+    transform: translateX(2200%);
+}
+  
+}
+@media screen and (max-width: 490px){
+
+  .social-sidebar-container {
+
+    transform: translateX(740%);
+}
+  
+}
+@media screen and (max-width: 407px){
+
+  .social-sidebar-container {
+
+    transform: translateX(610%);
+}
+  
+}
+@media screen and (max-width: 390px){
+
+  .social-sidebar-container {
+
+    transform: translateX(556%);
+}
+
+}
+
+@media screen and (max-width: 430px){
+
+  .social-sidebar-container {
+
+    transform: translateX(659%);
+}
+}
+
+
+@media screen and (max-width: 393px){
+
+  .social-sidebar-container {
+
+    transform: translateX(592%);
+}
+}
+
+
+@media screen and (max-width: 375px){
+
+  .social-sidebar-container {
+
+    transform: translateX(573%);
+  }
+}
+
+@media screen and (max-width: 420px){
+  .social-sidebar-container {
+    transform: translateX(615%);
+  }
+}
+
+@media screen and (max-width: 414px){
+  .social-sidebar-container {
+    transform: translateX(618%);
+  }
+}
+
+@media screen and (max-width: 412px){
+  .social-sidebar-container {
+    transform: translateX(615%);
+  }
+}
+
+@media screen and (max-width: 407px){
+  .social-sidebar-container {
+    transform: translateX(600%);
+  }
+}
+
+@media screen and (max-width: 400px){
+  .social-sidebar-container {
+    transform: translateX(590%);
+  }
+}
+
+@media screen and (max-width: 390px){
+  .social-sidebar-container {
+    transform: translateX(588%);
+  }
+}
+
+@media screen and (max-width: 375px){
+  .social-sidebar-container {
+    transform: translateX(584%);
+  }
+}

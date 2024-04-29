@@ -1,0 +1,109 @@
+@font-face {
+font-family: Gotham;
+src: url('../../fonts/Gotham-Font.otf')format('truetype');
+font-weight: bold;
+}
+
+.subtitulosChance{
+    font-weight: bold;
+    color: #00135b;
+}
+
+.cuadro-chance{
+    width: 100%;
+}
+.imagenChanceChance{
+    padding-top: 5%;
+}
+.tituloChances{
+    color: #00135b;
+    padding-bottom: 15px;
+    font-size: 27px;
+}
+.textoRightChance p {
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Gotham', sans-serif;
+    text-align: justify;
+    color: #00135b;
+}
+.textoLeftChance p {
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Gotham', sans-serif;
+    text-align: justify;
+    color: #00135b;
+}
+.linea-horizontal {
+    width: 85%; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra horizontalmente */
+    border: none;
+    border-top: 2px solid black; /* Estilo y color de la línea */
+    margin-bottom: 20px; /* Espacio entre la línea y los contenedores */
+}
+
+.imgChances {
+    width: 50vh;
+}
+
+.cuadroBannerChance{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenApuestaAquiChance {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1800px){
+    .imagenChanceChance {
+        width:100%;
+    }
+
+    .imagenNuestroProduct {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .imagenChanceChance {
+        padding-top: 20%;
+        width: 100%;
+    }
+    .cuadro-chance {
+        width: 100%;
+    }
+    .textoRightChance p {
+        font-size: 18px;
+    }
+    .textoLeftChance p {
+        font-size: 18px;
+    }
+    .imgChances{
+        width: 40vh;
+    }
+    .imagenApuestaAquiChance {
+        width: 85%;
+    }
+}
+
+/* @media screen and (max-width: 490px){
+    .imagenChanceChance {
+        padding-top: 14%;
+        width: 100%;
+    }
+    .cuadro-chance {
+        width: 100%;
+    }
+    .textoRightChance p {
+        font-size: 18px;
+    }
+    .textoLeftChance p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 390px){
+    .imagenChanceChance {
+        padding-top: 20%;
+    }
+} */

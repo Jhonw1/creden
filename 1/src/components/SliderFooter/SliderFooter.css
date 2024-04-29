@@ -1,0 +1,49 @@
+#slider {
+  overflow: hidden;
+  width: 60%; /* Ajusta el ancho del slider según tus necesidades */
+  margin: auto;
+}
+
+#slider figure {
+  display: flex;
+  width: 300%; /* Ajusta el ancho total del contenedor de las imágenes */
+  margin: 0;
+  padding: 0;
+  animation: slide 30s linear infinite; /* Ajusta la duración de la animación */
+}
+
+#slider figure img {
+  width: 800%; /* Ajusta el tamaño de las imágenes según tus necesidades */
+}
+
+/* Animación de transición */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-83%);
+  }
+   
+  25% {
+    transform: translateX(-83%);
+  }
+  /* 50% {
+    transform: translateX(-200%);
+  }  */
+  /* 66.6667% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  91.6667% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0); /* Vuelve a la posición inicial */
+}
+

@@ -1,0 +1,329 @@
+/* .billar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../assets/FONDO-CHANCE-DE-LA-SUERTE.png);
+    background-repeat: no-repeat ;
+    margin: 0% 0% -14% 0%;
+  }
+
+  @font-face {
+    font-family: Gotham;
+    src: url('../../fonts/Gotham-Font/Gotham-Bold.otf')format('truetype');
+    font-weight: bold;
+  }
+  .ball {
+    width: 156px;
+    height: 158px;
+    border-radius: 50%;
+    background: linear-gradient(157deg, #1a10a3, #4974f5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    margin: 11px;
+    margin-left: 3%;
+    font-size: 458%;
+    position: relative; /* Se agrega esta propiedad */
+    /* font-family:'Gotham',sans-serif
+  }
+  
+  .ball::before {
+    content: '';
+    position: absolute;
+    width: 103px;
+    height: 107px;
+    border-radius: 50%;
+    background-color: white;
+    z-index:1 ;
+  }
+  
+  span {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .circular-button {
+    width: 100px;
+    height: 99px;
+    border-radius: 25px;
+    background: linear-gradient(157deg, #1a10a3, #4974f5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: -26% -27% 5% -25%;
+    background-image: url("../../assets/BOTON-GIRAR-100X100PX.png");
+    background-repeat: no-repeat;
+    
+  } */ 
+  
+  
+  .billar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../assets/FONDO-CHANCE-DE-LA-SUERTE.png);
+    background-repeat: no-repeat;
+    margin: 0% 0% -14% 0%;
+  }
+
+  @font-face {
+    font-family: Gotham;
+    src: url('../../fonts/Gotham-Font/Gotham-Bold.otf')format('truetype');
+    font-weight: bold;
+  }
+  .ball {
+      color: black;
+      font-weight: bold;
+      background-image: url(/src/assets/BALOTA-1.png);
+      height: 19%;
+      width: 425px;
+      background-repeat: no-repeat;
+      background-size: 45%;
+      margin-right: -12%;
+      margin-left: 1%;
+      font-family:'Gotham',sans-serif
+  }
+  
+  .ball::before {
+    content: '';
+    position: absolute;
+    width: 103px;
+    height: 107px;
+    border-radius: 50%;
+  }
+  
+  span {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46%;
+    height: 100%;
+    font-size: 378%;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .linkkk {
+    background-image: url(/src/assets/BOTON-APUESTA-AQUÍ-MINIMO.png);
+    background-repeat: no-repeat;
+    width: 500px;
+    background-size: 100%;
+    position: absolute;
+    margin: -152px 686px;
+    height: 130px;
+}
+  
+  .circular-button {
+    width: 290px;
+    height: 300px;
+    border-radius: 25px;
+    background: linear-gradient(157deg, #1a10a3, #4974f5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: -30% -40% 5% -40%;
+    background-image: url(/src/assets/botonGirarr.png);
+    background-repeat: no-repeat
+  }
+  
+  /* respnsive para pc portatil */
+
+  @media screen and (max-width: 1366px) {
+    .billar-container {
+      width: 100%;
+      height: 750px;
+      background-position: top;
+      padding-top: 100px;
+    }
+
+    .ball {
+      color: black;
+    font-weight: bold;
+    background-image: url(/src/assets/BALOTA-1.png);
+    width: 410px;
+    ;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    margin-right: -19%;
+    font-family: 'Gotham',sans-serif;
+    }
+
+    .ball::before {
+     
+      width: 90px;
+      height: 85px;
+    }
+    .correccionr {
+      margin: -483px 0px 0px -5px;
+    }
+    .linkkk {
+      margin: -152px 419px;
+  }
+    span {
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 80%;
+      font-size: 378%;
+  }
+    .correccionl {
+      margin: -484px 0px 0px 720px;
+    }
+    
+    
+  }
+
+  @media screen and (max-width: 490px) {
+    .ball {
+    width: 76px;
+    height: 73px;
+    border-radius: 50%;
+    background-image: url(/src/assets/BALOTA-1.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-size: 99%;
+    margin: 32px -1px -31px 7px;
+    font-size: 69%;
+    }
+    span {
+      font-size: 275%;
+  }
+    .ball::before {
+      width: 60px;
+      height: 65px;
+    }
+    .linkkk {
+      display: none;
+  }
+    .correccionr {
+      display: none;
+    }
+    .circular-button{
+      background-size: 73%;
+      background-image: url(/src/assets/BOTON-GIRAR-100X100PX.png);
+      width: 115px;
+      height: 110px;
+
+    }
+    .correccionl {
+      margin: -76px -29px 0px 0px;
+        }
+
+        .billar-container {
+          padding: 0;
+          background-size: 191%;
+          height: 373px;
+          margin-top: 12px;
+      }
+      ball {
+        width: 76px;
+        height: 73px;
+        border-radius: 50%;
+        background-image: url(/assets/BALOTA-1-33c329b4.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        background-size: 99%;
+        margin: 32px -1px -98px 7px;
+        font-size: 69%;
+    }
+    .circular-button {
+      background-size: 73%;
+      background-image: url(/src/assets/BOTON-GIRAR-100X100PX.png);
+      width: 115px;
+      height: 110px;
+  }
+  }
+  
+@media screen and (max-width: 407px){
+
+  .billar-container {
+    background-image: url(/src/assets/fondoChance.jpeg);
+    padding: 0px;
+    background-size: 108%;
+    height: 334px !important;
+    margin-top: 29px;
+  }
+  
+  .ball {
+    width: 70px;
+    height: 62px;
+    border-radius: 50%;
+    background-image: url(/src/assets/BALOTA-1.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-size: 91%;
+    margin: 31px -2px -23px -1px;
+    font-size: 69%;
+}
+  span {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    height: 70%;
+  }
+  .correccionl {
+    margin: -69px -48px -45px 0px !important; 
+  }
+  .circular-button {
+    background-size: 58% !important;
+    background-image: url(/src/assets/BOTON-GIRAR-100X100PX.png);
+    width: 115px;
+    height: 110px;
+  }
+  }
+
+  @media screen and (max-width: 393px){
+    span{
+      margin-right: 5px;
+    }
+  }
+
+  
+  @media screen and (max-width: 390px){
+    .billar-container{
+      height: 332px !important;
+    }
+    .circular-button{
+      height: 75px;
+    }
+    .correccionl{
+      margin: -75px -46px -9px 0px !important;
+    }
+  }
+
+  @media screen and (max-width: 375px){
+    .billar-container{
+      height: 317px !important;
+    }
+  }

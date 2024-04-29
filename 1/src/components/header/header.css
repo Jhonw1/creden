@@ -1,0 +1,439 @@
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background: linear-gradient(157deg, #1019a3, #273769); */
+    background-color: #00145F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 20px;
+    z-index: 1000; /* Asegura que el header esté por encima del contenido */
+  }
+  @font-face {
+    font-family: Gotham;
+    src: url('../../fonts/Gotham-Font/Gotham-Bold.otf')format('truetype');
+    font-weight: bold;
+  }
+  
+ .logo{
+    margin-right: -1%;
+ }
+
+ .boton-mi-cuenta {
+  display: flex;
+  align-items: center;
+  width: 163px;
+  height: 42px;
+  border-radius: 29px;
+  background: linear-gradient(to left,#FF742C,#FFC904);
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Gotham',sans-serif;
+  padding: 8px 21px;
+}
+
+.icon-carrito{
+  transform: scaleX(-1);
+}
+.burger-icon {
+  display: none;
+}
+.linea-blanca {
+  height: 30px;
+  width: 2px;
+  background-color: #fff;
+  margin: 0 10px; /* Ajusta la separación entre el icono y el texto */
+}
+
+ 
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: center; /* Centra los elementos horizontalmente */
+    }
+  
+    li {
+      margin: 0 10px; /* Ajusta la separación entre elementos */
+      position: relative;
+    }
+    .sub-itemHeader{
+      color: #000000;
+      text-decoration: none;
+    }
+    .icon-header {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      font-family:'Gotham',sans-serif;
+      
+    }
+
+  .nav{
+    height: 45%;
+
+  }
+
+    .icon-header:hover {
+      color: #3b57bb;/* Cambiar el color al pasar el ratón por encima */
+      background-color: #fff;
+      border-radius: 2px;
+      
+    }
+    Link{
+      height:150px;
+      width: 150px;
+    }
+    .hover-header{
+      background-color: #fff;
+      height: 25px;
+    }
+    .boton-mi-cuenta:hover  {
+      color: #00145F; /* Cambiar el color al pasar el ratón por encima */
+    }
+  
+    li:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      height: 140%;
+      width: 1px;
+      background-color: #fff; /* Color de la línea vertical */
+      right: -11px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+  .logo-header{
+    height: 87px !important;
+    width: 211px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  
+  /* Lista de enlaces para dispositivos móviles */
+  .mobile-nav {
+    display: none;
+  }
+  
+  /* Mostrar la lista de enlaces al hacer clic en el botón de hamburguesa */
+  .burger-menu:checked + .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta según sea necesario */
+    left: 0;
+    background-color: #00145F; /* Color de fondo del menú */
+    width: 100%;
+    height: 135px;
+    z-index: 1000;
+  }
+  
+  /* Estilos para los elementos de la lista */
+
+  
+
+/* responsive para tablet*/
+
+@media screen and (max-width: 992px) {
+  .header {
+    flex-direction: row;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+  }
+
+  .logo-header{
+    height: 50px !important;
+    width: 155px;
+    margin-left: -100px;
+  }
+  
+  ul {
+    flex-direction: row;
+  }
+
+  .boton-mi-cuenta{
+    height: 25px;
+    width: 83px;
+  }
+
+  .icon-header {
+    margin: 0 10px;
+  }
+}
+
+/* responsive para pc portatil*/
+@media screen and (max-width: 1366px) {
+  .header {
+    flex-direction: row;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+  }
+
+  .logo-header{
+    height: 50px !important;
+    width: 155px;
+    margin-right: 70px;
+  }
+
+
+  .boton-mi-cuenta{
+    height: 25px;
+    width: 105px;
+    margin-left: 70px;
+  }
+
+  .icon-header {
+    margin: 0 10px;
+  }
+  .bottom-buttons {
+    display: flex;
+    width: 79%;
+    justify-content: center;
+  }
+
+  .bottom-buttons button {
+    width: 100%;
+    height: 65px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width: 1024px){
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 535px;
+  justify-content: center;
+}
+}/*responsive para tablet*/
+@media screen and (max-width: 767px){
+  .header {
+    flex-direction: column;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+}
+  .logo-header {
+    height: 50px !important;
+    width: 151px;
+    margin-right: 393px;
+  }
+  .boton-mi-cuenta {
+  height: 25px;
+  width: 105px;
+  margin: -82px -270px 53px 205px;
+}
+ul{
+  margin-top: 9px
+}
+
+}
+/* responsive para celular */
+
+@media screen and (max-width: 490px){
+  .header {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    padding: 0px 0px;
+    height: 71px;
+    justify-content: space-between;
+    justify-items: center;
+  }
+ ul{
+flex-direction: column;
+ }
+  
+    .burger-menu {
+      display: block;
+      background-color: #00145F;
+    border: none;
+    height: 20px;
+    color: white;
+    }
+
+  .nav{
+  display: none;
+    width: 100px;
+  }
+  li:not(:last-child)::after {
+
+    background-color: #00145F;
+   
+}
+.logo-header{
+  margin-right: 11px;
+}
+
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+
+  .nav.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    justify-content: center;
+    height: 177px;
+    background-color: #00145F;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .icon-header {
+    margin: 5px 10px;
+}
+ 
+  .logo {
+    margin: 0px 0px 0px 325px;
+  }
+
+  .boton-mi-cuenta {
+    height: -132px;
+    width: 114px;
+    margin: -2px 0px 0px -463px;
+  }
+
+  .popup-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(11px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    z-index: 1001;
+  }
+
+  .cierre {
+    width: 561px;
+    height: 16px;
+  }
+
+  .close-button {
+    color: #fff;
+  }
+
+
+}
+@media screen and (max-width: 407px){
+  .logo {
+    margin: 0px 0px 0px 276px;
+  }
+  .header{
+    display: flex;
+    text-align: start;
+    padding: 5px 0px;
+    height: 71px;
+    justify-content: space-between;
+    justify-items: center;
+  }
+  .boton-mi-cuenta {
+    height: -132px;
+    width: 114px;
+    margin: -2px 0px 0px -423px;
+  }
+  .logo-header {
+    margin-left: -105px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .boton-mi-cuenta{
+    margin-left:-404px ;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .logo {
+    margin: 0px 0px 0px 290px;
+  }
+  .header{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .boton-mi-cuenta{
+  margin-left:-430px ;
+  }
+}
+
+@media screen and (max-width: 412px){
+  .boton-mi-cuenta{
+    margin-left:-425px ;
+    }
+  .logo-header{
+    margin-left:-120px;
+    margin-right: -10px;
+  }
+}
+
+@media screen and (max-width: 405px){ 
+  .logo-header {
+    margin-left: -120px;
+  }
+  .boton-mi-cuenta {
+    margin-left: -410px;
+  }
+}
+
+@media screen and (max-width: 400px){ 
+  .logo-header {
+    margin-left: -120px;
+  }
+  .boton-mi-cuenta {
+    margin-left: -410px;
+  }
+}
+
+
+@media screen and (max-width: 393px){
+  .boton-mi-cuenta{
+    margin-left:-405px;
+  }
+}
+
+@media screen and (max-width: 390px){ 
+  .logo-header {
+    margin-left: -115px;
+  }
+  .boton-mi-cuenta {
+    margin-left: -405px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .boton-mi-cuenta{
+  margin-left:-374px ;
+  }
+  .logo-header{
+    margin-left:-100px;
+  }
+}

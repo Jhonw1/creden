@@ -1,0 +1,110 @@
+@font-face {
+font-family: Gotham;
+src: url('../../fonts/Gotham-Font.otf')format('truetype');
+font-weight: bold;
+}
+
+.portafolio-container {
+    position: relative;
+  }
+  
+  .texto-container {
+    font-family: 'Gotham',sans-serif;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 65%;
+  }
+  
+  .img-portafolio {
+    width: 100%;
+    padding-top: 100px;
+  }
+  
+  .texto-portafolio {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+  }
+  .botonUrlPorta{
+    color: #ff742c;
+  }
+  .boton-portafolio {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.421), #ffffff);
+    color: #ff742c;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 300px;
+    height: 80px;
+    font-size: 44px;
+    font-weight: 800;
+  }
+  .claseButton{
+    padding-top: 50px;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1800px) {
+    .img-portafolio {
+      padding-top: 70px;
+    }
+    .texto-container {
+      top: 15%;
+    }
+    .texto-portafolio {
+      font-size: 54px;
+  }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .texto-container{
+      top: 33%;
+  }
+  .texto-portafolio {
+      font-size: 14px;
+  }
+  .boton-portafolio {
+    width: 100px;
+    height: 35px;
+    font-size: 19px;
+  }
+  .claseButton{
+      padding-top: 10px;
+  }
+  .img-portafolio{
+      padding-top: 70px;
+  }
+  }
+
+/* @media screen and (max-width: 490px){
+    .texto-container{
+        top: 25%;
+    }
+    .texto-portafolio {
+        font-size: 20px;
+    }
+    .boton-portafolio {
+        width: 125px;
+        height: 50px;
+        font-size: 25px;
+    }
+    .claseButton{
+        padding-top: 10px;
+    }
+    .img-portafolio{
+        padding-top: 70px;
+    }
+}
+@media screen and (max-width: 390px){
+  .texto-portafolio{
+    font-size: 15px;
+  }
+  .boton-portafolio {
+    width: 120px;
+  }
+  .texto-container{
+    top: 32%;
+  }
+} */

@@ -1,0 +1,43 @@
+@font-face {
+font-family: Gotham;
+src: url('../../fonts/Gotham-Font.otf')format('truetype');
+font-weight: bold;
+}
+
+.cuadro-chance-color{
+    background-color: #FF742C;
+}
+.cuadro-betplay-color{
+    background-color: #00135B;
+}
+.cuadro-baloto-color{
+    background-color: #00449C;
+}
+.cuadro-miloto-color{
+    background-color: #9FC1FF;
+}
+.cuadro-superAstro-color{
+    background-color: #FFC904;
+}
+.cuadro-chanceMillonario-color{
+    background-color: #4D49E2;
+}
+.cuadro-blueCasino-color{
+    background-color: #00449C;
+}
+.cuadro-raspaListo-color{
+    background-color: #4D49E2;
+}
+.cuadro-banner-servicios{
+    display: flex;
+    justify-content: center;
+}
+.imagenNuestroProduct{
+    width: 30%;
+}
+
+@media screen and (max-width: 490px){
+    .imagenNuestroProduct {
+        width: 85%;
+    }
+}

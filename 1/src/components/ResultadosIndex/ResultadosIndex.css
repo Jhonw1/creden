@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Gotham;
+    src: url('../../fonts/Gotham-Font/Gotham-Bold.otf')format('truetype');
+    font-weight: bold;
+  }
+  
+.bigTitle{
+    margin: 50px;
+    background: linear-gradient(4deg, rgba(251,132,45,1) 35%, rgba(253,185,17,1) 100%);
+    padding:5px 30px;
+    border-radius: 40px;
+    color: white;
+    font-family:'Gotham Book Italic',sans-serif;
+}
+
+.flechasr{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    margin: 79px 0 0px 3px;
+}
+.contentbigR{
+    background-color: white;
+    width: 100%;
+    margin: 21px 0 71px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bigBox{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #9fc1ff;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    height: 28%;    
+    padding:20px 60px ;
+    width: 65vw;
+}
+.contenedoresr{
+    display: grid;
+    grid-template-areas: "box1 box2 box3 box4"
+                        "box5 box6 box7 box8";
+    gap: 40px;
+    justify-content: space-around;
+
+}
+.littleBoxes{
+    border-radius: 3rem;
+    background-color:#00449c;
+    width: 15rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.divFlotante{
+    width: 4.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    margin-left: -25px;
+    position: absolute;
+    border: 2px solid #9fc1ff ;
+    background-color: rgb(255, 255, 255);
+    
+}
+.divFlotante img {
+    height: 102%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6pc;
+}
+.otros{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    font-family:'Gotham medium  ',sans-serif;
+    align-items: end;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.titler {
+    width:75%;
+    display: flex;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+}
+.circulitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;  
+    font-family:'Gotham Book Italic',sans-serif;
+    border-radius: 20px;
+    height: 34px;
+    background-color: white;
+}
+.boxesR{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.titulo-resultados{
+    display: flex;
+    align-items: center;
+    font-family:'Gotham Book Italic',sans-serif;
+    
+}
+
+/* responsive para pc portatil */
+
+@media screen and (max-width: 1366px) {
+    .contentbigR {
+        width: 100%;
+        margin-top: 0px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    }
+
+    .bigTitle {
+        padding: 8px;
+        margin: 15px;
+        font-size: x-large;
+    }
+
+    .bigBox {
+        width: 1000px;
+        height: 200px;
+        padding: 28px 33px;
+    }
+
+    .flechasr {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .contenedoresr {
+        gap: 25px;
+    }
+
+    .littleBoxes {
+        width: 200px;
+        height: 88px;
+        border-radius: 30px;
+    }
+
+    .divFlotante {
+        width: 50px;
+        height: 30px;
+        margin-left: -15px;
+    }
+}
+
+/* responsive para celular */
+@media screen and (max-width: 490px) {
+   .contenedoresr{
+    display: grid;
+    grid-template-areas:
+        "box1 box2"
+        "box3 box4"
+        "box5 box6" 
+        "box7 box8";
+        gap: 15px;
+   }
+   .bigBox{
+    width: 85%;
+    height: 100%;
+    padding: 42px 20px;
+    border-radius: 90px;
+   }
+   .littleBoxes {
+    width: 150px;
+    height: 72px;
+    border-radius: 37px;
+   }
+   .circulitos {
+    width: 20px;
+    font-size: 1rem;
+    border-radius: 47px;
+    height: 27px;
+}
+.flechasr {
+    margin: 134px -13px 0px -20px;
+
+}
+.bigTitle {
+    padding: 14px;
+    margin: 13px;
+    font-size: large;
+
+}
+}
+
+@media screen and (max-width: 375px){
+.flechasr {
+    margin: 136px -32px 0px -31px;
+    width: 14%;
+}
+}

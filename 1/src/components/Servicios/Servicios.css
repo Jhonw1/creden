@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Gotham;
+    src: url('../../fonts/Gotham-Font.otf')format('truetype');
+    }
+    
+.cuadro-servicios{
+    padding-top: 100px;
+}
+
+.imagenNuestroService{
+    width: 100%;
+}
+    
+.cuadro-supergiros-color
+{ 
+    background-color: #00449C;
+}
+.cuadro-contenedor
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px 20px 20px;
+    align-items: center;
+}
+
+.cuadro-imagen-izquierda
+{   background-color: white;
+    width: 762px;
+    height: 206px;
+}
+
+.CUADRO-TEXTO-IZQUIERDA{
+    text-align: left;
+    font: normal normal 900 30px/36px Gotham;
+    color: #FFFFFF;
+    width: 50%;
+}
+
+.cuadro-recaudos-color
+{ 
+    background-color: #FF742C;
+}
+
+.cuadro-imagen-derecha
+{   
+    background-color: white;
+    left: 1093px;
+    width: 762px;
+    height: 206px;
+}
+    
+.CUADRO-TEXTO-DERECHA { 
+    font: normal normal 900 30px/36px Gotham;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CUADRO-CONTENEDOR-TEXTO{
+    width: 50%;
+}
+
+.cuadro-recargas-color
+{ 
+    background-color: #FFC904;
+}
+.cuadro-facicliente-color
+{ 
+    background-color: #9FC1FF;
+}
+    
+.CONTENEDOR-TEXTO-IZQUIERDA p{
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Gotham',sans-serif;
+    text-align: justify;
+}
+    
+.CONTENEDOR-TEXTO-DERECHA p{ 
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Gotham',sans-serif;
+    text-align: justify;
+}
+
+.TITULO-RECIBO
+{
+    text-align: center;
+    font: normal normal 200 82px/90px Gotham;
+    letter-spacing: 0px;
+    color: #00135B;
+    opacity: 1;
+}
+
+.imgServices{
+    width: 50vh;
+}
+
+.tituloServices{
+    padding-bottom: 15px;
+}
+
+.posicionBoton {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+.boton-derecha{
+    color: #00145f;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1366px) {
+    .cuadro-servicios {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .cuadro-contenedor
+    {
+        flex-direction: column;
+    }
+    .imgServices {
+        width: 35vh;
+    }
+    .CONTENEDOR-TEXTO-IZQUIERDA p {
+        font-size: 15px;
+    }
+    .tituloServices {
+        font-size: 30px;
+    }
+    .CUADRO-TEXTO-IZQUIERDA{
+        width: 100%;
+        font: normal normal 900 30px / 28px Gotham;
+    }
+    .CUADRO-CONTENEDOR-TEXTO {
+        width: 100%;
+    }
+    .CONTENEDOR-TEXTO-DERECHA p {
+        font-size: 15px;
+    }
+    .CUADRO-TEXTO-DERECHA {
+        font: normal normal 900 30px / 28px Gotham;
+        flex-direction: column-reverse;
+    }
+    .cuadro-servicios {
+        padding-top: 70px;
+    }
+    .boton-derecha {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
+}

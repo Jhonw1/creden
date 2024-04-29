@@ -1,0 +1,178 @@
+@font-face {
+font-family: Gotham;
+src: url('../../fonts/Gotham-Font.otf')format('truetype');
+font-weight: bold;
+}
+
+.containerFormTrabaja {
+  display: flex;
+  align-items: center;
+  background-color: #00135B;
+  font-family: 'Gotham', sans-serif;
+}
+
+.textoCorreoTrabaja {
+  background: #00449c;
+  color: white;
+  margin: auto;
+  font-size: 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.form-container{
+    font-family: 'Gotham', sans-serif;
+    display: flex;
+    width: 50%;
+    height: 60vh;
+    text-align: center;
+    /* margin: 130px auto 20px auto; */
+}
+.titleTrabaja{
+    color: #f7931e;
+    font-size: 30px;
+}
+.formform{
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    height: 80%;
+    padding: 20px;
+}
+.subtitulito{
+    color: #c1c1c1;
+    margin: auto;
+    font-size: 20px;
+}
+.textoCorreo{
+    background: #00449c;
+    color: white;
+    margin: auto;
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.formularioVacante {
+    background-color: #e6e6e6;
+    width: 92%;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Espacio entre cada grupo de campo y el siguiente */
+  }
+  
+  .form-group input {
+    width: 97%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #b7b7b7;
+    background-color: #e6e6e6;
+  }
+  
+  .buttonHV {
+    background-color: #001961;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .buttonHV:hover {
+    background-color: #0056b3;
+  }
+
+  .espacioForm{
+    padding: 130px 30px 20px;
+  }
+  input::placeholder {
+    color: #b4b4b4;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 1366px) {
+    .formform {
+      width: 65%;
+      height: 100%;
+      padding: 40px;
+    }
+    .lineaSeparadora {
+      height: 70vh;
+    }
+    .form-container {
+      height: 75vh;
+      margin: 0;
+      flex-direction: column-reverse;
+    }
+    .card h3{
+      text-align: center;
+    }
+    .textoCorreo{
+      font-size: 10px;
+    }
+  }
+
+@media screen and (max-width: 1280px){
+  .textoCorreo{
+    font-size: 14px;
+  }
+  .formform{
+    width: 70%;
+  }
+}
+
+  @media screen and (max-width: 490px){
+    .form-container{
+      font-family: 'Gotham', sans-serif;
+      display: flex;
+      width: 100%;
+      text-align: center;
+    }
+    .formform{
+      width: 73%;
+      height: 80%;
+    }
+    .textoCorreo{
+      font-size: 12px;
+    }
+    .containerFormTrabaja{
+      flex-direction: column;
+      align-items: start;
+    }
+    .subtitulito{
+      font-size: 16px;
+    }
+    .titleTrabaja{
+      font-size: 30px;
+    }
+    .formularioVacante {
+      width: 95%;
+      padding: 10px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0px;
+      border-bottom: 1px solid #b7b7b7;
+  }
+  }
+
+  @media screen and (max-width: 390px){
+    .espacioForm {
+      padding: 130px 10px 20px;
+    }
+    .card{
+      width: 155%;
+    }
+    .formform{
+      height: 80%;
+      width: 68%;
+    }
+    .textoCorreo{
+      font-size: 10px;
+    }
+}

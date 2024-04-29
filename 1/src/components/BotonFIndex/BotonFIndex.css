@@ -1,0 +1,144 @@
+.floating-hamburger {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  z-index: 999;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url('../../fonts/Gotham-Font/Gotham-Bold.otf')format('truetype');
+  font-weight: bold;
+}
+
+.hamburger-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger-main-item {
+  background-image: url('../../assets/BOTON-CALLCENTER.png');
+  background-size: cover;
+  background-position: center;
+  width: 107px;
+  height: 102px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 21px;
+  margin-bottom: 108%;
+}
+
+.sub-components {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Added transform property */
+  transform-origin: bottom right; /* Set transform origin to bottom right */
+  transform: scaleY(0); /* Initially scale to 0 in the Y direction */
+  
+}
+
+.floating-hamburger.open .sub-components {
+  opacity: 1;
+  pointer-events: all;
+  transform: scaleY(1); /* Scale to 1 in the Y direction when open */
+}
+
+.sub-component {
+  width: 127px;
+  height: 55px;
+  background: linear-gradient(to bottom,#9992ff,#2546b9);
+  margin: 5px -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 27px;
+  font-size: 17px;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  font-weight: bold;
+  font-family: 'Gotham',sans-serif;
+  padding-left: 10%;
+  margin-left: -9%;
+}
+
+.floating-hamburger.open .sub-components {
+  opacity: 1;
+  pointer-events: all;
+  transform: scaleX(1); /* Scale to 1 in the X direction when open */
+  transform-origin: bottom left; /* Set transform origin to bottom left */
+}
+
+.floating-hamburger.open .sub-component {
+  transition-delay: 0.1s;
+  transition-duration: 0.18s;
+  transform: translate3d(7px, 20px, 0);
+}
+
+.floating-hamburger.open .sub-component:nth-child(2) {
+  transition-delay: 0.2s;
+  transition-duration: 0.18s;
+  transform: translate3d(0px, 150px, 0);
+}
+
+.floating-hamburger.open .sub-component:nth-child(3) {
+  transition-delay: 0.3s;
+  transition-duration: 0.18s;
+  transform: translate3d(-145px, -50px, 0);
+}
+
+.floating-hamburger.open .sub-component:nth-child(4) {
+  transition-delay: 0.4s;
+  transition-duration: 0.18s;
+  transform: translate3d(-140px, -30px, 0);
+}
+
+/* responsive para celular */
+
+@media screen and (max-width: 490px) {
+  .hamburger-main-item {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 81%;
+    margin-right: 11%;
+  }
+  .sub-component {
+    font-size: 13px;
+}
+
+  .floating-hamburger.open .sub-component{
+    transform: translate(0px, 15px);
+    height: 30px;
+    width: 110px;
+    text-align: center;
+  }
+
+  .floating-hamburger.open .sub-component:nth-child(2) {
+    transition-delay: 0.2s;
+    transition-duration: 0.18s;
+    transform: translate3d(0px, 120px, 0px);
+  }
+
+  .floating-hamburger.open .sub-component:nth-child(4) {
+    transition-delay: 0.4s;
+    transition-duration: 0.18s;
+    transform: translate3d(-115px, 0px, 0);
+  }
+
+  .floating-hamburger.open .sub-component:nth-child(3) {
+    transition-delay: 0.3s;
+    transition-duration: 0.18s;
+    transform: translate3d(-115px, -20px, 0);
+  }
+}

@@ -1,0 +1,343 @@
+@font-face {
+font-family: Gotham;
+src: url('../../fonts/Gotham-Font.otf')format('truetype');
+font-weight: bold;
+}
+.contenedorSomos{
+    font-family: 'Gotham',sans-serif;
+    /* padding-top: 135px;
+    padding-left: 205px; */
+    padding: 130px;
+    position: relative; /* Establece el posicionamiento relativo */
+    z-index: 1;
+}
+.imagenes-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    position: absolute; /* Establece el posicionamiento absoluto */
+    top: 730px; /* Ajusta la posición vertical según sea necesario */
+    left: 185px; /* Ajusta la posición horizontal según sea necesario */
+    z-index: 2; 
+}
+
+.imagen {
+    width: 30%; /* Ajusta el ancho de las imágenes */
+}
+.contenedor {
+    display: flex;
+    width: 70%;
+    color: white;
+}
+
+.cuadro-somos {
+    width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+    padding: 10px;
+}
+
+.contenido {
+    display: flex;
+    width: 230%;
+    justify-content: flex-end;
+}
+
+.texto-somos {
+    margin-right: 20px; /* Ajusta el espacio entre el texto y la imagen */
+}
+
+.img-somos {
+    width: 75%;
+}
+.texto-celu {
+    text-align: justify;
+    display: none;
+}
+.texto-pc{
+    font-size: 20px;
+    text-align: justify;
+}
+.titleQuienes {
+    font-size: 42px;
+    color: white;
+}
+.containerText{
+    display: flex;
+}
+
+.containerForm{
+    display: flex;
+    align-items: center;
+    background-color: #00135B;
+    font-family: 'Gotham',sans-serif;
+    margin-top: 500px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 55%;
+    margin: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.card p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    flex: 2;
+    text-align: justify;
+}
+.card h3 {
+    position: relative;
+    color: #f7931e;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente el h3 */
+    flex: 1;
+    text-align: center;
+}
+
+.card hr{
+    margin: 15px;
+    height: auto;
+}
+
+.formulario-container{
+    display: flex;
+    align-items: center;
+}
+
+.botonPostula{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: linear-gradient(to left,#FF742C,#FFC904);
+    font-family: 'Gotham',sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.lineaSeparadora {
+    width: 10px;
+    height: 55vh;
+    border-radius: 5px;
+    background-color: white;
+}
+.textoCorreoSomos{
+    background: #00449c;
+    color: white;
+    margin: auto;
+    font-size: 15.5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.espacioBlanco{
+    margin-top: 500px;
+}
+
+/* @media screen and (max-width: 1366px) {
+    .contenido {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .img-somos {
+        width: 260%;
+    }
+    .imagenes-container {
+        max-width: 100%;
+        top: 930px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .imagenes-container {
+        top: 1010px;
+    }
+} */
+
+@media only screen and (min-width: 1025px) and (max-width: 1800px) {
+    .contenido {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .img-somos {
+        width: 260%;
+    }
+    .imagenes-container {
+        max-width: 100%;
+        top: 1010px;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contenedorSomos{
+        padding: 22% 0px 50px 28px;
+    }
+    .contenedor {
+        width: 90%;
+        flex-direction: column;
+    }
+    .img-somos{
+        width: 260%;
+    }
+    .texto-celu{
+        display: block;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    .texto-pc{
+        display: none;
+    }
+    .cuadro-somos{
+        width: 60%;
+        padding-top: 20px;
+    }
+    .contenido{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+    .titleQuienes {
+        font-size: 25px;
+    }
+    .card{
+        width: 157%;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .card p{
+        font-size: 12px;
+    }
+    .card h3{
+        text-align: center;
+    }
+    .containerForm{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 280%;
+    }
+    .espacioBlanco{
+        margin-top: 290%;
+    }
+    .lineaSeparadora{
+        display: none;
+    }
+    .imagenes-container{
+        max-width: 100%;
+        top: 900px;
+        left: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .imagen{
+        width: 70%;
+    }
+    .textoCorreoSomos{
+        font-size: 12px;
+    }
+}
+
+/* @media screen and (max-width: 490px){
+    .contenedorSomos{
+        font-family: 'Gotham',sans-serif;
+        padding: 20% 0px 50px 28px;
+    }
+    .contenedor {
+        width: 90%;
+        flex-direction: column;
+    }
+    .img-somos{
+        width: 260%;
+    }
+    .texto-celu{
+        display: block;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    .texto-pc{
+        display: none;
+    }
+    .cuadro-somos{
+        width: 60%;
+        padding-top: 20px;
+    }
+    .contenido{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+    .titleQuienes {
+        font-size: 25px;
+    }
+    .card{
+        width: 157%;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .card p{
+        font-size: 12px;
+    }
+    .card h3{
+        text-align: center;
+    }
+    .containerForm{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 280%;
+    }
+    .espacioBlanco{
+        margin-top: 280%;
+    }
+    .lineaSeparadora{
+        display: none;
+    }
+    .imagenes-container{
+        max-width: 100%;
+        top: 970px;
+        left: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .imagen{
+        width: 70%;
+    }
+    .textoCorreoSomos{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 415px){
+    .imagenes-container{
+        top: 900px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .img-somos {
+        width: 305px;
+    }
+    .contenedorSomos {
+        padding: 25% 0px 50px 28px;
+        width: 99%;
+    }
+    .imagenes-container{
+        top: 900px;
+    }
+} */
